@@ -1,0 +1,68 @@
+#main, #cook_page {
+    background-color: rgb(245, 222, 179);
+}
+
+#content_main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    border: 5px solid rgb(235, 189, 104, 0.8);;
+    margin: 30px;
+}
+
+#logo {
+    border-color: rgb(235, 189, 104, 0.6);
+}
+
+#volley, #cycle {
+    border-color: rgb(235, 189, 104, 0.65);
+}
+
+#eu_park {
+    border-color: rgb(235, 189, 104, 0.7);
+}
+
+#food {
+    border-color: rgb(235, 189, 104, 0.75);
+}
+
+h5 {
+    text-align: left;
+    margin-left: 0px;
+    background-color: rgb(251, 194, 88, 0.5);
+    border-left: 10px solid rgb(251, 194, 88);
+    padding: 10px;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+.alert {
+    text-align: left;
+}
+
+#content_CS50 {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.header {
+    text-align: center;
+}
+
+#CS50_page {
+    background-color: #EDEDED;
+}
+
+#CS_to_main {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 5px;
+}
