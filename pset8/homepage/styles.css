@@ -66,3 +66,7 @@ h1 {
     left: 0;
     margin: 5px;
 }
+
+#dishes, #me {
+    text-align: center;
+}
