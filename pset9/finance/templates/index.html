@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy stocks
+{% endblock %}
+
+{% block main %}
+    <h2>Info</h2>
+    <p>Account balance: {{ usd(cash) }}</p>
+    <p>Total assets: {{ usd(total) }}</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Stock</th>
+                <th>Shares</th>
+                <th>Current price</th>
+                <th>Total holdings</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stocks %}
+                <tr>
+                    <td>{{ stock["stock"] }}</td>
+                    <td>{{ stock["shares"] }}</td>
+                    <td>{{ usd(stock["price"]) }}</td>
+                    <td>{{ usd(stock["total"]) }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
