@@ -1,0 +1,42 @@
+{
+    "name": "Speed config",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "Sets a playback speed of YT video in the range [0.5 - 3.5]",
+    "icons": {
+        "16": "images/speedometer_16.png",
+        "32": "images/speedometer_32.png",
+        "48": "images/speedometer_48.png",
+        "128": "images/speedometer.png"
+    },
+    "host_permissions": ["https://*.youtube.com/*"],
+    "permissions": ["storage", "tabs", "activeTab"],
+
+    "action": {
+        "default_title": "Speed it up!",
+
+        "default_icon": {
+            "16": "images/speedometer_16.png",
+            "32": "images/speedometer_32.png",
+            "48": "images/speedometer_48.png",
+            "128": "images/speedometer.png"
+        }
+    },
+
+
+    "content_scripts": [
+        {
+            "matches": ["https://*.youtube.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+
+    "web_accessible_resources": [
+        {
+          "resources": [
+            "images/btn_48.png"
+          ],
+          "matches": ["https://*.youtube.com/*"]
+        }
+      ]
+}
